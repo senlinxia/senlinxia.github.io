@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Senlin Xia</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container col-xs-12 col-sm-8 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-offset-2 p-0">
+
+        <h1 id = "myName">Senlin Xia</h1>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="publication-tab" data-toggle="tab" href="#publication" role="tab" aria-controls="publication" aria-selected="false">Research</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+        <table>
+          <tr>
+            <td width = "15%">
+              <img src="assets/photo.jpg" alt="" align="center" style="width: 60%;">
+            </td>
+            <td width = "62%">
+              <p>I am currently pursuing the M.S. degree in information and communication engineering at University of Electronic Science and Technology of China, supervised by Prof. <a href="https://ieeexplore.ieee.org/author/37530814100">Guolong Cui</a>. Before that, I obtained my B.S. degree from School of Information Science & Engineering at Lanzhou University, supervised by Prof. <a href="https://kunzhan.github.io">Kun Zhan</a>.
+			        <p>My research focuses on radar target detection and tracking via deep learning.</p>
+              <p><a href="assets/CV.pdf" target="_blank">CV</a> / <a href="https://github.com/senlinxia">GitHub</a> / <a href="https://orcid.org/0000-0002-5021-1039">ORCID</a></p>
+              <p>Last updated July 2023</p>
+            </td>
+
+        </tr>
+        
+        </table>
+        
+        </div>
+        
+        <div class="tab-pane fade" id="publication" role="tabpanel" aria-labelledby="publication-tab">
+		
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h4 style="margin-top: 10px">Overview</h4>
+              <hr>
+              <p>
+                Radar targets are generally non-cooperative, resulting in a significant scarcity of target samples. Even if there are a small amount of valuable data, accurately labeling them is challenging since the true position of the target is unknown. However, most data-driven detection methods focus on training with a accurate label set.
+			  <br> <br> 
+			  The goal of my research is to make object recognition available in the real world. The models should be trained without precise labels. 
+			  <br> <br> 
+			  Towards this goal, my research focuses on three aspects: 1. How to extract meaningful representations from raw data. I propose a method for radar visual representations via contrastive learning and its application on target detection (<a href="https://github.com/senlinxia/RAVA-CL">RAVA-CL</a>). 2. How to learn from incomplete or imprecise annotations. I propose a weakly supervised radar target detection method to detect potential targets and generate range cell-level labels (<a href="https://github.com/senlinxia/WSRTD">WSRTD</a>). 3. How to generalize object recognition through time. I propose an end-to-end tracking framework based on learning displacement of the target in successive frames. (<a href="https://github.com/senlinxia/TBLD">TBLD</a>).
+			  <br> <br> 
+			  Going further, I am interested in target detection, target tracking, supervised learning, and unsupervised learning.
+			  </p>
+              <br>
+			  
+		<h4>2023</h4>
+		<hr>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <img src="assets/TIM2023.png" alt="" align="left" style="width: 65%;display:block;margin-left: auto;margin-right: auto; margin-right: 40%;">
+              <br> <br> 
+              <papertitle>Target Detection in Sea Clutter via Contrastive Learning</papertitle>
+              <br><strong>Senlin Xia</strong>, Yukai Kong, Kui Xiong, and Guolong Cui <br>
+              <i>IEEE Transactions on Instrumentation and Measurement</i>, 2023.<br>
+              <a href="assets/TIM2023.bib" target="_blank">[bibtex]</a> <a href="https://ieeexplore.ieee.org/document/10168724" target="_blank">[paper]</a> <a href="https://github.com/senlinxia/RAVA-CL" target="_blank">[code]</a>
+            </div>
+          </div>
+          <br>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <!-- <img src="assets/TIM2023.png" alt="" align="left" style="width: 65%;display:block;margin-left: auto;margin-right: auto; margin-right: 40%;"> -->
+              <br> <br> 
+              <papertitle>Radar Target Detection in Nonhomogeneous Sea Clutter via Weakly Supervised Learning</papertitle>
+              <br><strong>Senlin Xia</strong>, Kui Xiong, Tao Fan, and Guolong Cui <br>
+              <i>IEEE Geoscience and Remote Sensing Letters</i>, 2023. (Minor revision)<br>
+              <!-- <a href="assets/TIM2023.bib" target="_blank">[bibtex]</a> <a href="https://ieeexplore.ieee.org/document/10168724" target="_blank">[paper]</a> <a href="https://github.com/google-research/scenic/tree/main/scenic/projects/objectvivit" target="_blank">[code]</a> -->
+              [bibtex] [paper] <a href="https://github.com/senlinxia/WSRTD" target="_blank">[code]</a>
+            </div>
+          </div>
+          <br>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <!-- <img src="assets/TIM2023.png" alt="" align="left" style="width: 65%;display:block;margin-left: auto;margin-right: auto; margin-right: 40%;"> -->
+              <br> <br> 
+              <papertitle>A Radar Target Tracking Algorithm Based on Learning Displacement</papertitle>
+              <br><strong>Senlin Xia</strong>, Yutao Xiang, Shisheng Guo, and Guolong Cui <br>
+              <i>IEEE Geoscience and Remote Sensing Letters</i>, 2023. (Under review)<br>
+              <!-- <a href="assets/TIM2023.bib" target="_blank">[bibtex]</a> <a href="https://ieeexplore.ieee.org/document/10168724" target="_blank">[paper]</a> <a href="https://github.com/google-research/scenic/tree/main/scenic/projects/objectvivit" target="_blank">[code]</a> -->
+              [bibtex] [paper] <a href="https://github.com/senlinxia/TBLD" target="_blank">[code]</a>
+            </div>
+          </div>
+          <br>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <br> <br> 
+              <papertitle>Compound jamming recognition via contrastive learning for distributed MIMO radars</papertitle>
+              <br>Yukai Kong, <strong>Senlin Xia</strong>, Luxin Dong, Xianxiang Yu, and Guolong Cui <br>
+              <i>IEEE Transactions on Vehicular Technology</i>, 2023. (Under review)<br>
+              <!-- <a href="assets/TIM2023.bib" target="_blank">[bibtex]</a> <a href="https://ieeexplore.ieee.org/document/10168724" target="_blank">[paper]</a> <a href="https://github.com/google-research/scenic/tree/main/scenic/projects/objectvivit" target="_blank">[code]</a> -->
+              [bibtex] [paper] [code]
+            </div>
+          </div>
+          <br>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
